@@ -1,0 +1,227 @@
+
+<head>
+    <link rel="stylesheet" href="wildlife.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inconsolata:wght@200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img class="logo logo-left" src= "https://assets.codepen.io/13142316/verdant+yellow+logo.png" alt="Verdant Court Logo">
+    <div class="app">
+      <div class="sidebar">
+        <p class="case-number">Case No. 361 F. Supp. 1360</p>
+      </div>
+      <div id="content" class="content">
+        <h1>United States District Court,<br>D. of Maryland</h1>
+        <div class="case-info">
+          <div class="case-number-main">No. 94</div>
+          <div class="date">September 20, 1973</div>
+          <div class="case-title">Wildlife Destruction and Mining</div>
+        </div>
+        <div class="case-details">
+          <div class="plaintiffs">
+            <p>Movement Against Destruction (MAD) and other community groups,</p>
+            <p>Plaintiffs,</p>
+          </div>
+          <div class="brackets">
+            <div class="bracket">)</div>
+            <div class="bracket">)</div>
+            <div class="bracket">)</div>
+            <div class="bracket">)</div>
+            <div class="bracket">)</div>
+            <div class="bracket">)</div>
+          </div>
+          <div class="defendants">
+            <p>John A. Volpe, U.S. Secretary of Transportation, and other local officials,</p>
+            <p>Defendants.</p>
+          </div>
+        </div>
+      </div>
+  
+      <nav class="navigation">
+        <ul>
+         <ul>
+    <li><a href="#content" onclick="trackLastSection('content')">Go to the top</a></li>
+    <li><a href="#legaisue" onclick="trackLastSection('legaisue')">Legal issue</a></li>
+    <li><a href="#thelaw" onclick="trackLastSection('thelaw')">The Law</a></li>
+    <li><a href="#facts" onclick="trackLastSection('facts')">Facts</a></li>
+    <li><a href="#memoradumopinion" onclick="trackLastSection('memoradumopinion')">Memorandum opinion</a></li>
+    <li><a href="#evidence_arguments" onclick="trackLastSection('evidence_arguments')">Evidence and Arguments</a></li>
+  </ul>
+            
+          </ul>
+        <div class="bottombuttons">
+          <button class="note-button" onclick="goToNotepad()">Notepad</button>
+          <!--<button class="highlight-button">Highlighter</button>/* -->
+          <button class="main-menu-button" onclick="mainMenu()">Go to main menu</button>
+        </div>
+      </nav>
+    </div>
+    <div id="legaisue" class="legaisue-container">
+      <h2>We are here to decide on the matter of...</h2>
+      <p>
+        Whether the construction of the "3-A System" in Baltimore violated federal environmental and transportation statutes, including compliance with the National Environmental Policy Act (NEPA) and other federal laws.
+      </p>
+       <div class="dots">•<br>•<br>•</div>
+    </div>
+  
+    <div id="thelaw" class="thelaw-container">
+      <h2>The legal principles applicable to this case are...</h2>
+      <p>
+              <span class="sub-heading">National Environmental Policy Act (NEPA):</span>
+              Requires federal agencies to assess the environmental impact of proposed actions.
+          </p>
+  
+          <p>
+              <span class="sub-heading">Federal-Aid Highway Act: </span>
+             Mandates specific procedures for the construction of federally funded highways.
+          </p>
+  
+          <p>
+              <span class="sub-heading">Clean Air Amendments of 1970:</span>
+              Establishes air quality standards and compliance for federal projects.
+          </p>
+  
+          <p>
+              <span class="sub-heading">Department of Transportation Act: </span>
+              Protects certain public parks and recreational lands from highway development without specific findings.
+          </p>
+  
+      <div class="dots">•<br>•<br>•</div>
+    </div>
+  
+    <div id="facts" class="facts-container">
+      <h2>Having considered the facts presented...</h2>
+      <p>
+        The plaintiffs alleged that the construction of the "3-A System" highway project in Baltimore would harm local neighborhoods and the environment.
+        The project was part of the Federal-Aid Interstate System and had undergone preliminary environmental review.
+          The plaintiffs argued that federal officials failed to adequately consider environmental impacts and alternatives as required by NEPA and other statutes.
+        Defendants maintained that the project complied with all statutory requirements and would provide significant transportation benefits.
+      </p>
+     <div class="dots">•<br>•<br>•</div>
+    </div>
+  
+    <div id="memoradumopinion" class="memoradumopinion-container">
+      <h2>Memorandum Opinion</h2>
+       <p>
+           The court acknowledged the importance of NEPA and other statutes in ensuring environmental review but ultimately found that the defendants had substantially complied with these requirements. The memorandum emphasized that the role of the judiciary was not to assess the merits of the project itself but to ensure procedural adherence. The court noted that the defendants had conducted an environmental impact statement (EIS), engaged in public consultations, and demonstrated efforts to minimize harm. While recognizing the plaintiffs’ concerns about environmental and community impact, the court concluded that the statutory procedures had been followed adequately, allowing the project to proceed.
+          </p>
+       <div class="dots">•<br>•<br>•</div>
+    </div>
+  <div id="evidence_arguments" class="buttonS">
+      <div class="caseevidence"> <h2 >This court has reviewed the evidence in the case of... </h2></div>
+      <div class="button-row">
+        <button onclick="location.href='#plaintiffEvi'" class="pEvi">Plaintiff Evidence</button>
+        <button onclick="location.href='#defendantEvi'" class="dEvi">Defendant Evidence</button>
+      </div>
+     <div id="plaintiffEvi" class="plaintiffEvi" >
+        <p>The plaintiffs presented detailed evidence of potential environmental and social harms resulting from the "3-A System" construction. This included expert analyses showing that the highway would exacerbate air pollution in already burdened urban areas, contrary to the goals of the Clean Air Act. Community members provided testimonies about the project’s expected displacement of residents and disruption of neighborhoods. The plaintiffs argued that alternatives to the project were not sufficiently explored and that the environmental impact statement (EIS) lacked a thorough assessment of long-term effects. The plaintiffs also submitted documentation indicating that public participation in decision-making was limited, undermining NEPA’s goals of transparency and inclusivity.
+  
+  </p>
+        <button onclick="location.href='#evidence_arguments'" class="goBack">Go back</button>
+  
+      </div>
+  
+      <div id="defendantEvi" class="defendantEvi">
+        <p>The defendants relied on the completed environmental impact statement (EIS) as evidence of compliance with NEPA. They highlighted the project’s comprehensive planning process, which included consultations with local agencies and efforts to mitigate environmental harm. Defendants also presented transportation studies demonstrating the necessity of the highway for reducing congestion and improving regional connectivity. Technical data was submitted to show compliance with federal air quality and transportation standards. Additionally, defendants pointed to modifications made to the project design to address community concerns, such as rerouting sections of the highway to minimize displacement.
+  
+        </p>
+        <button onclick="location.href='#evidence_arguments'" class="goBack">Go back</button>
+      </div>
+      <div class="casearguments"> <h2>... and it is going to look at both side arguments...</h2></div>
+      <div class="button-row">
+        <button onclick="location.href='#plaintiffArg'" class="pArg">Plaintiff Argument</button>
+        <button onclick="location.href='#defendantArg'" class="dArg">Defendant Argument</button>
+      </div>  
+  
+     
+  
+      <div id="plaintiffArg" class="plaintiffArg">
+        <p>The plaintiffs argued that the defendants failed to meet the procedural and substantive requirements of federal environmental laws. They emphasized that the EIS was deficient, lacking a detailed analysis of viable alternatives and failing to account for cumulative environmental impacts. The plaintiffs asserted that the project would result in irreparable harm to local communities, including displacement of residents, destruction of historical areas, and increased air pollution. They claimed that these outcomes violated NEPA’s goals of protecting human and environmental health. The plaintiffs further argued that the Clean Air Act and the Department of Transportation Act required greater consideration of alternatives to minimize harm.
+  
+        </p>
+        <button onclick="location.href='#evidence_arguments'"class="goBack">Go back</button>
+      </div>
+      
+      <div id="defendantArg" class="defendantArg">
+        <p>The defendants contended that the project complied fully with all legal requirements, including NEPA, the Federal-Aid Highway Act, and the Clean Air Act. They argued that the EIS sufficiently analyzed environmental impacts and demonstrated the project’s necessity for regional transportation improvements. The defendants maintained that extensive public consultations were conducted and that community concerns were incorporated into the project’s design. They emphasized that the benefits of the highway, such as reduced traffic congestion and economic development, outweighed the environmental and social costs. Defendants also asserted that delaying or halting the project would have severe economic and logistical repercussions.
+   </p>
+        <button onclick="location.href='#evidence_arguments'"class="goBack">Go back</button>
+      </div>
+  
+       <div class="results">
+    <div class="examined">
+      <h2>The court has examined all arguments from both sides...</h2>
+    </div>
+    <div class="dots">•<br>•<br>•</div>
+    <div class="ruling">
+      <h2 id="dynamicRuling">I hereby rule in favour for...</h2> 
+    </div>
+    <div class="dots">•<br>•<br>•</div>
+    <div class="button-row">
+      <button class="buttonP" onclick="goToVerdictSection('Plaintiff')">Plaintiff</button>
+      <button class="buttonD" onclick="goToVerdictSection('Defendant')">Defendant</button>
+    </div>
+  </div>
+        
+   <div class="verdictSection" id="verdictSection" >
+      <h1 id="verdictTitle">Verdict: </h1>
+       <div class="dots">•<br>•<br>•</div>
+       <div class="CaseSummary" id="CaseSummary">
+               <h2>Case Summary</h2>
+        <p>In Movement Against Destruction (MAD) et al. v. John A. Volpe, U.S. Secretary of Transportation, et al., community groups sought to halt the construction of Baltimore's "3-A System" of the Federal-Aid Interstate System, alleging violations of several federal statutes, including the National Environmental Policy Act (NEPA), the Federal-Aid Highway Act, the Clean Air Amendments of 1970, and the Department of Transportation Act. The plaintiffs argued that the defendants failed to conduct adequate environmental impact assessments as required by these laws. However, the U.S. District Court for the District of Maryland denied their request for an injunction and declaratory relief on June 22, 1973, finding no statutory violations. This decision was affirmed by the Fourth Circuit Court of Appeals on March 19, 1974, with a subsequent denial of a rehearing on May 7, 1974. The case highlights the significant hurdles community groups face when challenging large-scale infrastructure projects on environmental grounds.</p>
+        <div class="dots">•<br>•<br>•</div>
+      </div>
+     <form id="form1" class="form1" style="width: 80%; margin:0 auto; margin-top: 200px; padding: 20px;">
+         <h2>Reasoning...</h2>
+       <p id="textRuled"></p>
+         <label id="question1" for="question1" style="margin-top: 20px;   margin-bottom: 20px; font-style: italic;">What key facts or evidence influenced your decision?</label><br>
+         <input type="text" id="input1" name="input1" style="background-color: #d4af37; width: 50%; height: 40px; margin-top: 20px;   margin-bottom: 20px;"><br>
+          <label id="question2" for="question2" style="margin-top: 20px;   margin-bottom: 20px; font-style: italic;">How does the evidence relate to the applicable laws or principles?</label><br>
+         <input type="text" id="input2" name="input2" style="background-color: #d4af37; width: 50%; height: 40px; margin-top: 20px;   margin-bottom: 20px;"><br>
+          <label id="question3" for="question3" style="margin-top: 20px;   margin-bottom: 20px; font-style: italic;">Why does your decision align with justice and fairness in this case?</label><br>
+         <input type="text" id="input3" name="input3" style="background-color: #d4af37; width: 50%; height: 40px; margin-top: 20px;   margin-bottom: 20px;"><br>
+      </form>
+      <form id="form2" style="margin:0 auto; margin-top: 200px; padding: 20px;">
+         <h2>Order....</h2>
+         <textarea placeholder="Write your order here..." id="text" name="text" style="background-color: #d4af37; width: 39%; height: 40px;"></textarea>
+       <div> <button class="hintsButton" onclick="showHints()">Hints</button> </div>
+  <div id="hints" style="display:none;">
+    <textarea id="hintText" style="width: 50%; height: 230px; color:#0d2b52; " readonly>
+  Specify the action or remedy ordered based on ruling.
+  
+  Ensure the order directly addresses the issues identified in your reasoning.
+  
+  Balance the needs of both parties when crafting your order, where applicable.
+  
+  Refer to relevant laws, regulations, or legal standards discussed in the case.
+    </textarea>
+      </form>
+    </div>
+     <p id="message" class="message" style="margin-top: 500px">The cases you’ve ruled on in this game are not mere fiction—they are echoes of real-life struggles for justice. Each decision you faced represents the complexities of law, morality, and the human impact of legal systems. In the real world, these cases shaped lives, communities, and the course of justice itself. Now, you have the chance to dive deeper: compare your verdicts to the real-life outcomes and consider the challenges faced by the judges who ruled on them.
+  
+  Justice is not a static concept; it evolves through the choices of those who dare to weigh fairness against power, empathy against evidence, and principle against consequence. Let this experience inspire you to think critically, act fairly, and advocate for a world where justice is not a privilege but a promise. Go beyond the game. Explore the truth. And be the voice of fairness where it is most needed.</p>
+     <div class="RealLife" id="RealLife">
+     <h2>Real life outcome</h2>
+     <p>The real-life outcome of Movement Against Destruction (MAD) v. Volpe resulted in the continuation of the controversial "3-A System" highway project in Baltimore, despite significant opposition from environmental and community groups. The courts’ decisions to deny the injunction and affirm the legality of the project under existing federal statutes allowed construction to proceed, leading to lasting impacts on the affected neighborhoods and ecosystems. The case underscored the difficulty of using environmental laws to stop large-scale infrastructure projects, particularly in the early years of the National Environmental Policy Act (NEPA). For Baltimore, the development of the highway system resulted in the displacement of communities and environmental degradation, sparking further debates about urban planning and community advocacy. The case remains a pivotal example of the challenges grassroots organizations face in balancing urban development with environmental and social concerns.</p>
+   </div>
+  <div id="Print" class= "Print" >
+     <h2>Print your results</h2>
+    <button class="PrintButton" onclick="saveVerdictAsTextFile()">Print
+  </button>  <div>
+    
+    <div id="notes" class="notes"> 
+        <h2>Notepad</h2>
+         <textarea placeholder="Keep your notes here..." id="notepad" name="notepad" style="background-color: #d4af37; width: 50%; height: 100px;"></textarea>
+        <button class="BackNote" onclick="goBackToLastSection()" >Go back
+  </button>
+      </div>
+    
+    <script src="hiddenDivs.js"></script>
+    <script src="goToVerdictSection.js"></script>
+    <script src="showHints.js"></script>
+        <script src="adjustText.js"></script>
+     <script src="mainMenu.js"></script>
+       <script src="print.js"></script>
+       <script src="note.js"></script>
+  </body>
+  
+  </html>

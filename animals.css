@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Elegant Typewriter';
+    src: url('https://assets.codepen.io/13142316/ELEGANT+TYPEWRITER+Regular_1.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Lora';
+    src: url('https://assets.codepen.io/13142316/Lora-VariableFont_wght.ttf');
+  }
+  
+  @font-face {
+    font-family: 'Cinzel Decorative';
+    src: url('https://assets.codepen.io/13142316/CinzelDecorative-Regular.ttf');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 20px 0 0 0;
+    font-family: "Lora", serif;
+    background-color: #78A083;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-right: 250px;
+  }
+  
+  img {
+    width: 10%;   
+    height: auto;
+  }
+  
+  p {
+    text-align: left;
+    width: 50%; 
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: "Lora", serif;
+    color: #ffffff;
+  }
+  
+  .app {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #78A083;
+    color: #C84B31;
+  }
+  
+  .sidebar {
+    font-family: "Cinzel Decorative", serif;
+    width: 50px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: bold;
+    color: #C84B31;
+    font-size: 1.2em;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 150px;
+    color: #C84B31;
+    font-family: "Cinzel Decorative", serif;
+  }
+  
+  h2 {
+    color: #C84B31;
+    font-family: "Cinzel Decorative", serif;
+    margin-bottom: 120px;
+  }
+  
+  .case-info {
+    font-family: "Cinzel Decorative", serif;
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    margin-bottom: 100px;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.85em;
+  }
+  
+  .case-number-main {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #C84B31;
+  }
+  
+  .case-number {
+    color: #C84B31;
+    font-family: "Cinzel Decorative", serif;
+  }
+  
+  .date {
+    font-size: 1em;
+    font-style: italic;
+    color: #C84B31;
+    display: inline-block;
+    border-bottom: 1px solid #C84B31;
+  }
+  
+  .case-title {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #C84B31;
+  }
+  
+  .case-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .case-details div {
+    width: 45%;
+    color: #ffffff;
+  }
+  
+  .plaintiffs, .defendants {
+    line-height: 1.5em;
+    text-align: left;
+  }
+  
+  .plaintiffs p, .defendants p {
+    text-align: left;
+    margin: 0;
+  }
+  
+  .plaintiffs::after, .defendants::after {
+    content: ")";
+    display: inline-block;
+    margin-left: 5px;
+    color: #ffffff;
+  }
+  
+  .navigation {
+    font-family: "Cinzel Decorative", serif;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: #C84B31;
+    border-left: 2px solid #0e2645;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    height: 90%;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .navigation li a {
+    display: block;
+    padding: 10px;
+    background-color: #78A083;
+    color: #C84B31;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  .navigation li a:hover {
+    background-color: #ffffff;
+    color: #0e2645;
+  }
+  
+  .main-menu-button{
+    border: 2px solid #78A083;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+    color: #78A083;
+  }
+  
+  .highlight-button, .note-button {
+    border: 2px;
+    border-radius: 30px;
+    background-color: #78A083;
+    color: #C84B31;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .highlight-button:hover, .note-button:hover {
+    background-color: #ffffff;
+    color: #0e2645;
+  }
+  
+  button {
+    background-color: #C84B31;
+    color: #0e2645;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border: 2px #C84B31;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-family: "Cinzel Decorative";
+  }
+  
+  button:hover {
+    background-color: #e6c75d;
+  }
+  
+  .brackets {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #C84B31;
+  }
+  
+  .bracket {
+    font-size: 24px;
+    font-family: "Elegant Typewriter", monospace;
+  }
+  
+  .sidebar p, .date::after {
+    content: " ";
+    color: #C84B31;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 5px;
+    border-bottom: 1px solid #f0dc82;
+  }
+  
+  .legaisue-container, .thelaw-container, .facts-container, .memoradumopinion-container, .buttonS {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    margin-top: 300px;
+  }
+  
+  .button-row {
+    margin-top: 20px;
+  }
+  
+  .dots {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-family: "Cinzel Decorative";
+    color: #ffffff;
+  }
+  
+  .caseevidence, .casearguments, .results {
+    font-family: "Lora";
+    color: #ffffff;
+  }
+  .buttonP, .buttonD {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+     width: 250px;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 200px;
+  }
+  
+  .court-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .examined, .ruling {
+    font-size: 1.2rm;
+    margin: 10px 0;
+  }
+  
+  .goBack {
+    margin-top: 20px;
+  }
+  
+  #defendantArg, #plaintiffArg, #defendantEvi, #plaintiffEvi {
+    display: none;
+  }
+  
+  .verdictSection{
+    margin-top: 500px;
+    justify-content: cener;
+  }
+  .CaseSummary{
+    margin-top: 300px;
+  }
+  
+  .ruling {
+    margin-top: 500px;
+  }
+  .message{
+    font-family: "Cinzel Decorative";
+    color: #c84b31;
+  }
+  .RealLife{
+      margin-top: 300px;
+  }
+  
+  .Print{
+    margin-top: 350px;
+    margin-bottom: 300px;
+  }
+  
+  #textRuled {
+    font-style: italic;
+    text-align: center;
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+  #hintText {
+    background-color: #c84b31; 
+    color: #ffffff;          
+    font-family: "Cinzel Decorative", serif; 
+    line-height: 1.8;
+    font-size: 0.8rem;
+  }
+  
+  #text, #input1, #input2, #input3 {
+   color: #ffffff; 
+     font-family: "Lora", serif;
+   line-height: 1.8;
+    font-size: 1rem;
+  }
+  
+  #notepad {
+    color: #ffffff; 
+   font-family: "Lora", serif;
+   line-height: 1.8;
+   font-size: 1rem;
+  }
+  
+  #notes{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  .notes{
+    margin-top: 2000px;
+    margin-bottom: 200px;
+  
+  }
+  .BackNote{
+    margin-top: 20px;
+  }
+  .BackNote:hover {
+    background-color: #e6c75d; 
+  }

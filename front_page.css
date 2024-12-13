@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Elegant Typewriter';
+    src: url('https://assets.codepen.io/13142316/ELEGANT+TYPEWRITER+Regular_1.ttf');
+  }
+  body {
+      
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    color: #0D2B52;
+  }
+  
+  #app {
+      text-align: center;
+  }
+  
+  h1 {
+      margin-bottom: 0px;
+      font-size: 50px;
+      font-family: "Cinzel Decorative", serif;
+      font-weight: 400;
+  
+  }
+  h2 {
+      margin-top: 100px;
+      font-size: 20px;
+    font-family: "Cinzel Decorative", serif;
+      font-weight: 400;
+  
+  }
+  
+  .button button{
+      padding: 10px 10px; 
+      padding-left: 20px;
+      padding-right: 20px;
+    margin-top: 50px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 20px;
+    border-color: #0D2B52;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent; 
+    border: 2px solid #0D2B52;
+    border-radius: 30px;
+    color: #0D2B52;
+  }
+  
+  
+   .logo {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 20px;
+      position: absolute;
+      top: 20px;
+  }
+  
+  .logo-left {
+      left: 20px;
+  }
+  
+  .logo-right {
+      right: 20px;
+  }
+  .className {
+     text-transform: uppercase;
+  }
